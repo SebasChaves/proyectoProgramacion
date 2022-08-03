@@ -3,12 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_inicio">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_inicio"
         android:name="com.carnes_don_fernando.ui.home.HomeFragment"
         android:label="@string/title_inicio"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_locales"
+        android:name="com.carnes_don_fernando.LocalesFragment"
+        android:label="fragment_locales"
+        tools:layout="@layout/fragment_locales" />
+    <fragment
+        android:id="@+id/navigation_cortes"
+        android:name="com.carnes_don_fernando.CortesFragment"
+        android:label="fragment_cortes"
+        tools:layout="@layout/fragment_cortes" />
+    <fragment
+        android:id="@+id/navigation_pedidos"
+        android:name="com.carnes_don_fernando.CarritoFragment"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.carnes_don_fernando.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 
 </navigation>

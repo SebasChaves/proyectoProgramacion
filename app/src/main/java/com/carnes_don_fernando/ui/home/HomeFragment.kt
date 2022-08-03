@@ -27,6 +27,8 @@ class HomeFragment : Fragment() {
 
     ): View {
 
+
+
         estadoViewModel = ViewModelProvider(this)[HomeViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater,container,false)
 

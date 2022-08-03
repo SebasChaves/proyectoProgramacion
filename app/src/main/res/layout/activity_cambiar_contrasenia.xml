@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
-
+    tools:context=".CambiarContraseniaActivity">
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -28,13 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Inicio de sesión"
+            android:text="¿Olvidó su contraseña?"
             android:textAlignment="center"
             android:textSize="28sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tv_email"
+            android:id="@+id/tv_email_codigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -44,42 +43,23 @@
             android:textAlignment="center"
             android:textAllCaps="false" />
 
-        <EditText
-            android:id="@+id/tv_contrasenia"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:textAlignment="center" />
+            android:visibility="gone" />
 
         <Button
-            android:id="@+id/btn_iniciarSesion"
+            android:id="@+id/btn_continuar"
             android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Iniciar Sesión" />
+            android:layout_marginTop="80dp"
+            android:text="Continuar"
 
-        <Button
-            android:id="@+id/btn_creaCuenta"
-            android:layout_width="306dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Crear Cuenta" />
-
-        <TextView
-            android:id="@+id/tv_cambiarContrasenia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Olvide mi contraseña"
-            android:textAlignment="center"
-            android:textColor="@color/azul_enalce"
-            android:textSize="16sp" />
+            />
 
     </LinearLayout>
+
 </LinearLayout>

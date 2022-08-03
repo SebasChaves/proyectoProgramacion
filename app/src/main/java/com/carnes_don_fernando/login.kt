@@ -3,6 +3,7 @@ package com.carnes_don_fernando
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import com.carnes_don_fernando.databinding.ActivityLoginBinding
 import com.carnes_don_fernando.ui.home.HomeFragment
@@ -26,6 +27,10 @@ class login : AppCompatActivity() {
         binding.btnIniciarSesion.setOnClickListener { iniciarSesion() }
         binding.btnCreaCuenta.setOnClickListener {
             val intent= Intent(this, crear_cuenta::class.java)
+            startActivity(intent)
+        }
+        binding.tvCambiarContrasenia.setOnClickListener  {
+            val intent= Intent(this, CambiarContraseniaActivity::class.java)
             startActivity(intent)
         }
 

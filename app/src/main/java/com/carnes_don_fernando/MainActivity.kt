@@ -15,10 +15,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //Thread.sleep(4000)
-        setTheme(R.style.Theme_Carnes_don_fernando)
-        super.onCreate(savedInstanceState)
 
+        setTheme(R.style.Theme_Carnes_don_fernando)
+
+        super.onCreate(savedInstanceState)
+        //Thread.sleep(4000)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
